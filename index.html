@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Daus Timer</title> <!-- Memperbaiki ejaan dari "Podomoro" menjadi "Pomodoro" -->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet"> <!-- Memperbaiki format font -->  
+    <script src="https://kit.fontawesome.com/15f1a6797c.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="./style.css">  
+</head>  
+<body>  
+    <section>  
+        <div class="container">  
+            <h1>Daus Timer</h1> <!-- Memperbaiki ejaan dari "Podomoro" menjadi "Pomodoro" -->  
+            <div class="painel">  
+                <p id="work">Work</p>  
+                <p id="break">Break</p>  
+            </div>  
+
+            <div class="timer">  
+                <div class="circle">  
+                    <div class="time">  
+                        <p id="minutes">00</p> <!-- Menambahkan nilai default untuk menit -->  
+                        <p>:</p>  
+                        <p id="seconds">00</p> <!-- Menambahkan nilai default untuk detik -->  
+                    </div>  
+                </div>  
+            </div>  
+
+            <div class="controls">  
+                <button id="start" onclick="start()">  
+                    <i class="fa-solid fa-play"></i>  
+                </button>  
+                <a id="reset" href="/" style="display: none;"> <!-- Menyembunyikan tautan reset secara default -->  
+                    <i class="fa-solid fa-arrows-rotate"></i>  
+                </a>  
+            </div>  
+        </div>  
+    </section>  
+
+    <script src="./script.js"></script>  
+</body>  
+</html>  
